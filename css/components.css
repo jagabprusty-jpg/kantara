@@ -1,0 +1,314 @@
+/* ==========================================================================
+   THE KANTARA RESTAURANT - COMPONENTS & INTERACTIVE STYLES
+   ========================================================================== */
+
+/* Navbar Glassmorphism */
+.site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 50;
+  background-color: rgba(23, 59, 50, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(228, 218, 200, 0.12);
+  transition: all 0.3s ease;
+}
+
+.site-header.scrolled {
+  background-color: rgba(15, 38, 32, 0.96);
+  box-shadow: 0 4px 20px -2px rgba(15, 38, 32, 0.3);
+}
+
+/* Nav Link Hover & Active Underline */
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-gold-500);
+  transition: width 0.25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-link.active {
+  color: var(--color-gold-400) !important;
+  font-weight: 600;
+}
+
+/* Mobile Slide Drawer */
+#slide-drawer {
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#slide-drawer.open {
+  transform: translateX(0) !important;
+}
+
+#drawer-backdrop {
+  transition: opacity 0.3s ease;
+}
+
+#drawer-backdrop.active {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+/* Bottom Nav Active State */
+.bottom-nav-item.active {
+  color: var(--color-forest-900) !important;
+  font-weight: 700;
+}
+
+.bottom-nav-item.active .material-symbols-outlined {
+  font-variation-settings: 'FILL' 1;
+}
+
+/* Dish Cards Hover Effect */
+.dish-card, .dish-item {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+}
+
+.dish-card:hover, .dish-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -4px rgba(23, 59, 50, 0.12);
+}
+
+/* Dietary Indicators */
+.diet-badge-veg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--color-diet-veg);
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.diet-badge-veg::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-diet-veg);
+  border-radius: 50%;
+}
+
+.diet-badge-nonveg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid var(--color-diet-nonveg);
+  padding: 2px;
+  border-radius: 2px;
+}
+
+.diet-badge-nonveg::after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-diet-nonveg);
+  border-radius: 50%;
+}
+
+/* ==========================================================================
+   LIGHTBOX COMPONENT
+   ========================================================================== */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(15, 38, 32, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lightbox-container {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(0.95);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.lightbox-overlay.active .lightbox-container {
+  transform: scale(1);
+}
+
+.lightbox-image-wrapper {
+  position: relative;
+  max-height: 72vh;
+  max-width: 88vw;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(198, 161, 91, 0.3);
+  background-color: var(--color-charcoal-900);
+}
+
+.lightbox-image-wrapper img {
+  max-height: 72vh;
+  max-width: 88vw;
+  object-fit: contain;
+  display: block;
+}
+
+.lightbox-info {
+  margin-top: 1rem;
+  text-align: center;
+  color: var(--color-cream-100);
+  max-width: 600px;
+}
+
+.lightbox-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(23, 59, 50, 0.8);
+  color: var(--color-gold-400);
+  border: 1px solid rgba(198, 161, 91, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.lightbox-btn:hover {
+  background-color: var(--color-gold-500);
+  color: var(--color-forest-950);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.lightbox-prev {
+  left: -28px;
+}
+
+.lightbox-next {
+  right: -28px;
+}
+
+@media (max-width: 768px) {
+  .lightbox-prev {
+    left: 8px;
+  }
+  .lightbox-next {
+    right: 8px;
+  }
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(23, 59, 50, 0.7);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 20;
+}
+
+.lightbox-close:hover {
+  background-color: #ba1a1a;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   RESERVATION CONFIRMATION MODAL
+   ========================================================================== */
+.reservation-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(15, 38, 32, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.reservation-modal-backdrop.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.reservation-modal {
+  background-color: var(--color-cream-100);
+  border: 1px solid var(--color-sand-beige);
+  border-radius: 16px;
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 25px 50px -12px rgba(15, 38, 32, 0.35);
+  transform: translateY(20px) scale(0.96);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reservation-modal-backdrop.active .reservation-modal {
+  transform: translateY(0) scale(1);
+}
+
+/* Accordion FAQ */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-item.active .faq-answer {
+  max-height: 400px;
+  transition: max-height 0.4s ease-in-out;
+}

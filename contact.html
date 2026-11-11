@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>Contact &amp; Reservations • The Kantara Restaurant • Channapatna</title>
+  <meta name="description" content="Reserve your table beneath the soaring bamboo cathedral at The Kantara on the Bangalore-Mysore expressway in Channapatna. Real-time availability, valet parking, and EV charging."/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#1d1c16",
+            "on-secondary-container": "#795424",
+            "inverse-on-surface": "#f5f0e6",
+            "surface-dim": "#dedad0",
+            "veg-green": "#2E7D32",
+            "secondary-container": "#fecb90",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#efbe84",
+            "background": "#fef9ef",
+            "surface-container-high": "#ede8de",
+            "surface-container-highest": "#e7e2d8",
+            "secondary-fixed": "#ffddb8",
+            "outline-variant": "#c1c8c4",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#a8cfc2",
+            "error": "#ba1a1a",
+            "sand-beige": "#D8C6A5",
+            "on-surface-variant": "#414845",
+            "surface-variant": "#e7e2d8",
+            "surface-container": "#f2ede3",
+            "primary-container": "#173b32",
+            "tertiary-fixed-dim": "#e9c178",
+            "inverse-primary": "#a8cfc2",
+            "surface-bright": "#fef9ef",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#42655b",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#80a599",
+            "on-primary": "#ffffff",
+            "outline": "#717975",
+            "border-timber": "#E4DAC8",
+            "charcoal-dark": "#20231F",
+            "on-tertiary-container": "#bc9853",
+            "primary": "#00251d",
+            "on-surface": "#1d1c16",
+            "secondary": "#7c5727",
+            "tertiary-container": "#473100",
+            "tertiary-fixed": "#ffdea5",
+            "inverse-surface": "#32302a",
+            "surface-container-low": "#f8f3e9",
+            "surface-container-lowest": "#ffffff",
+            "pure-white": "#FFFFFF",
+            "tertiary": "#2c1d00",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#614011",
+            "primary-fixed": "#c4ebde",
+            "surface": "#fef9ef",
+            "on-tertiary-fixed": "#271900",
+            "nonveg-red": "#C62828",
+            "on-tertiary-fixed-variant": "#5d4202",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#002019",
+            "on-primary-fixed-variant": "#2a4d44"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "space-lg": "2rem",
+            "margin-tablet": "2rem",
+            "space-sm": "0.75rem",
+            "margin": "4rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "space-2xl": "5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1.25rem",
+            "margin-mobile": "1.25rem"
+          },
+          fontFamily: {
+            "headline-xl-mobile": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-cta": ["DM Sans"],
+            "body-sm": ["DM Sans"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["DM Sans"],
+            "label-eyebrow": ["DM Sans"],
+            "caption": ["DM Sans"],
+            "headline-xl": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["DM Sans"]
+          },
+          fontSize: {
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-cta": ["13px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.22em", "fontWeight": "600" }],
+            "caption": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "500" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+  <!-- ==================== SITE HEADER ==================== -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-primary-container/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.08)] transition-all duration-300">
+    <div class="h-20 max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-space-sm">
+        <button aria-label="Open Navigation Menu" class="lg:hidden w-10 h-10 flex items-center justify-center text-inverse-on-surface rounded-full hover:bg-primary transition-all" id="menu-open-btn">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+        <a class="flex items-center gap-space-sm" href="index.html">
+          <img alt="The Kantara Logo" class="h-9 w-auto object-contain" src="assets/images/logo.svg" onerror="this.src='assets/images/logo.svg'"/>
+          <span class="font-headline-md text-headline-md text-inverse-on-surface tracking-wider font-semibold">The Kantara</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-space-lg" data-active-classes="text-secondary-fixed">
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="home" href="index.html">Home</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="about" href="about.html">About</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="menu" href="menu.html">Menu</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="gallery" href="gallery.html">Gallery</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-secondary-fixed font-semibold" data-page="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-space-md">
+        <a class="inline-flex items-center justify-center h-12 px-space-md bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase rounded-DEFAULT transition-all duration-200 hover:bg-secondary-fixed-dim hover:text-primary active:scale-[0.99] font-medium" href="#reservation">
+          Reserve a Table
+        </a>
+        <div class="hidden sm:flex w-8 h-8 rounded-full bg-primary items-center justify-center text-on-primary">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE SLIDE DRAWER ==================== -->
+  <div class="fixed inset-0 z-50 bg-charcoal-dark/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="drawer-backdrop"></div>
+  <aside class="fixed top-0 left-0 bottom-0 z-50 w-[85vw] max-w-sm bg-primary text-inverse-on-surface flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out shadow-[0_16px_40px_-12px_rgba(32,35,31,0.5)]" id="slide-drawer">
+    <div class="p-margin-mobile flex flex-col h-full">
+      <div class="flex items-center justify-between pb-space-md border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <img alt="The Kantara Logo" class="h-7 w-auto object-contain" src="assets/images/logo.svg"/>
+          <span class="font-headline-sm text-headline-sm text-sand-beige tracking-wide">The Kantara</span>
+        </div>
+        <button aria-label="Close Menu" class="w-10 h-10 flex items-center justify-center text-inverse-on-surface rounded-full hover:bg-primary-container active:scale-95" id="menu-close-btn">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+      <p class="font-label-eyebrow text-label-eyebrow uppercase text-primary-fixed-dim tracking-[0.22em] my-space-md">
+        Bangalore-Mysore Corridor • Channapatna
+      </p>
+      <nav class="flex flex-col gap-space-xs mt-space-xs">
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="home" href="index.html">
+          <span>Home</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="about" href="about.html">
+          <span>About Us</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="menu" href="menu.html">
+          <span>Our Menu</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="gallery" href="gallery.html">
+          <span>Gallery Showcase</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-sand-beige font-semibold flex items-center justify-between" data-page="contact" href="contact.html">
+          <span>Contact &amp; Location</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">check</span>
+        </a>
+      </nav>
+      <div class="mt-auto pt-space-md flex flex-col gap-space-sm border-t border-white/10">
+        <a class="w-full h-12 bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase rounded-full flex items-center justify-center tracking-widest font-semibold shadow-lg hover:bg-secondary-fixed-dim transition-colors" href="#reservation">
+          Reserve a Table
+        </a>
+        <div class="pt-space-xs text-center">
+          <p class="font-caption text-caption text-primary-fixed-dim">Artisanal Dining • High Canopy Architecture</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== DEMO BOOKING CONFIRMATION MODAL ==================== -->
+  <div class="fixed inset-0 z-50 bg-charcoal-dark/70 backdrop-blur-md flex items-center justify-center p-4 transition-opacity duration-300 opacity-0 pointer-events-none" id="reservation-modal-backdrop">
+    <!-- Injected dynamically via interactions.js -->
+  </div>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="pt-20">
+
+    <!-- HERO HEADER: Atmospheric Editorial Tone -->
+    <section class="w-full bg-surface-container py-space-xl lg:py-space-2xl border-b border-sand-beige/40">
+      <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+          <div class="max-w-3xl">
+            <span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.25em] text-secondary font-semibold block mb-space-xs">
+              Table Reservations &amp; Highway Concierge
+            </span>
+            <h1 class="font-headline-xl lg:font-display-hero text-headline-xl lg:text-display-hero text-primary leading-[1.15] mb-space-sm">
+              Step Beneath the Bamboo Canopy
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+              Whether pausing your expressway journey between Bangalore and Mysore or celebrating an ancestral milestone with family, reserve your table envelope beneath our 40-foot soaring bamboo arches.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row lg:flex-col gap-space-xs shrink-0">
+            <div class="p-space-sm rounded-lg bg-surface-container-highest flex items-center gap-space-sm border border-sand-beige/30">
+              <span class="material-symbols-outlined text-secondary text-[24px]">call</span>
+              <div>
+                <span class="font-label-eyebrow text-[10px] text-on-surface-variant uppercase tracking-wider block">Highway Transit Hotline</span>
+                <a href="tel:+918028001947" class="font-headline-sm text-headline-sm text-primary hover:text-secondary transition-colors">+91 (80) 2800 1947</a>
+              </div>
+            </div>
+            <div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center gap-space-sm border border-sand-beige/40">
+              <span class="material-symbols-outlined text-veg-green text-[24px]">verified</span>
+              <div>
+                <span class="font-label-eyebrow text-[10px] text-veg-green uppercase tracking-wider block">Real-Time Confirmation</span>
+                <span class="font-caption text-caption text-on-surface-variant">Instant booking pass with directions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Triptych: 3 Curated Architectural Angles -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mt-space-xl">
+          <!-- Portico -->
+          <div class="relative h-60 md:h-72 rounded-xl overflow-hidden group shadow-sm">
+            <img alt="The Kantara entrance facade with bamboo portico and warm highway lighting" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/exterior_bamboo_facade.png" onerror="this.src='assets/images/logo.svg'"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+            <div class="absolute bottom-space-sm left-space-sm right-space-sm text-inverse-on-surface">
+              <span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase tracking-wider block mb-0.5">Arrival &amp; Portico</span>
+              <p class="font-headline-sm text-headline-sm font-medium">Entrance Facade &amp; Highway Courtyard</p>
+            </div>
+          </div>
+          <!-- Cathedral Hall -->
+          <div class="relative h-60 md:h-72 rounded-xl overflow-hidden group shadow-sm">
+            <img alt="Bamboo Cathedral dining nave with soaring arched vaults and lantern pendants" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/cathedral_dining_hall.png" onerror="this.src='assets/images/logo.svg'"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+            <div class="absolute bottom-space-sm left-space-sm right-space-sm text-inverse-on-surface">
+              <span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase tracking-wider block mb-0.5">Central Nave</span>
+              <p class="font-headline-sm text-headline-sm font-medium">Bamboo Cathedral Dining Hall</p>
+            </div>
+          </div>
+          <!-- Tree of Life Alcove -->
+          <div class="relative h-60 md:h-72 rounded-xl overflow-hidden group shadow-sm">
+            <img alt="Intimate banquet booths arranged beneath the illuminated Tree of Life mural" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="assets/images/tree_of_life_seating.png" onerror="this.src='assets/images/logo.svg'"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent"></div>
+            <div class="absolute bottom-space-sm left-space-sm right-space-sm text-inverse-on-surface">
+              <span class="font-label-eyebrow text-label-eyebrow text-secondary-fixed-dim uppercase tracking-wider block mb-0.5">Ancestral Enclaves</span>
+              <p class="font-headline-sm text-headline-sm font-medium">Tree of Life Sanctuary Booths</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE TWO-COLUMN RESERVATION & TRANSIT CONCIERGE SECTION -->
+    <section class="w-full bg-surface-container-low py-space-xl" id="reservation">
+      <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl">
+          
+          <!-- LEFT: Primary Interactive Booking Module (7 Columns) -->
+          <div class="lg:col-span-7 flex flex-col gap-space-lg">
+            <div class="bg-surface-container-lowest p-space-md md:p-space-xl rounded-xl shadow-md border border-sand-beige/40">
+              
+              <!-- Step Counter & Header -->
+              <div class="flex items-center justify-between pb-space-md mb-space-lg bg-surface-container/50 p-space-sm rounded-lg">
+                <div class="flex items-center gap-space-sm">
+                  <span class="w-8 h-8 rounded-full bg-primary text-secondary-fixed flex items-center justify-center font-headline-sm text-[15px]">1</span>
+                  <div>
+                    <h2 class="font-headline-md text-headline-md text-primary leading-tight">Table Reservation</h2>
+                    <p class="font-caption text-caption text-on-surface-variant">Guaranteed dining envelope with personalized host welcome</p>
+                  </div>
+                </div>
+                <span class="hidden sm:inline-flex items-center gap-1.5 font-label-cta text-label-cta text-veg-green bg-veg-green/10 px-2.5 py-1 rounded">
+                  <span class="w-2 h-2 rounded-full bg-veg-green animate-pulse"></span>
+                  Tables Available Today
+                </span>
+              </div>
+
+              <form class="flex flex-col gap-space-xl" id="reservation-form" onsubmit="event.preventDefault(); handleBookingSubmit(event);">
+                
+                <!-- STEP 1: Seating Zone Selector -->
+                <div class="flex flex-col gap-space-sm">
+                  <div class="flex items-center justify-between">
+                    <label class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-widest font-semibold">
+                      Step 01 • Select Architectural Zone
+                    </label>
+                    <span class="font-caption text-caption text-on-surface-variant">Tap to choose atmosphere</span>
+                  </div>
+                  
+                  <div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="zone-selector">
+                    <!-- Zone 1 -->
+                    <div class="zone-card cursor-pointer p-space-sm rounded-lg bg-surface-container text-left transition-all duration-200 hover:bg-surface-container-high ring-2 ring-primary" onclick="selectZone('cathedral', this)">
+                      <div class="flex items-center justify-between mb-space-xs">
+                        <span class="material-symbols-outlined text-primary text-[22px]">roofing</span>
+                        <span class="zone-badge w-2.5 h-2.5 rounded-full bg-secondary"></span>
+                      </div>
+                      <p class="font-headline-sm text-headline-sm text-primary leading-tight mb-1">Grand Cathedral</p>
+                      <p class="font-caption text-caption text-on-surface-variant">Vaulted bamboo rafters, ambient lanterns &amp; airy natural breeze</p>
+                    </div>
+
+                    <!-- Zone 2 -->
+                    <div class="zone-card cursor-pointer p-space-sm rounded-lg bg-surface-container-high/60 text-left transition-all duration-200 hover:bg-surface-container-high" onclick="selectZone('enclave', this)">
+                      <div class="flex items-center justify-between mb-space-xs">
+                        <span class="material-symbols-outlined text-secondary text-[22px]">nature</span>
+                        <span class="zone-badge w-2.5 h-2.5 rounded-full bg-transparent"></span>
+                      </div>
+                      <p class="font-headline-sm text-headline-sm text-primary leading-tight mb-1">Artisan Teak</p>
+                      <p class="font-caption text-caption text-on-surface-variant">Private timber alcove near illuminated Tree of Life mural</p>
+                    </div>
+
+                    <!-- Zone 3 -->
+                    <div class="zone-card cursor-pointer p-space-sm rounded-lg bg-surface-container-high/60 text-left transition-all duration-200 hover:bg-surface-container-high" onclick="selectZone('transit', this)">
+                      <div class="flex items-center justify-between mb-space-xs">
+                        <span class="material-symbols-outlined text-tertiary text-[22px]">bolt</span>
+                        <span class="zone-badge w-2.5 h-2.5 rounded-full bg-transparent"></span>
+                      </div>
+                      <p class="font-headline-sm text-headline-sm text-primary leading-tight mb-1">Express Transit</p>
+                      <p class="font-caption text-caption text-on-surface-variant">Highway travelers seeking priority 18-minute culinary service</p>
+                    </div>
+                  </div>
+                  <input id="selected-zone" type="hidden" value="cathedral"/>
+                </div>
+
+                <!-- STEP 2: Date, Meal & Slot -->
+                <div class="flex flex-col gap-space-sm">
+                  <label class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-widest font-semibold">
+                    Step 02 • Date &amp; Dining Window
+                  </label>
+                  
+                  <!-- Quick Date Chips -->
+                  <div class="flex flex-wrap items-center gap-space-xs mb-space-xs">
+                    <button class="date-chip px-space-sm py-1.5 rounded text-caption font-label-cta uppercase bg-primary text-on-primary transition-colors" onclick="quickDate('today', this)" type="button">Today, Nov 15</button>
+                    <button class="date-chip px-space-sm py-1.5 rounded text-caption font-label-cta uppercase bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickDate('tomorrow', this)" type="button">Tomorrow, Nov 16</button>
+                    <button class="date-chip px-space-sm py-1.5 rounded text-caption font-label-cta uppercase bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="quickDate('sunday', this)" type="button">Sunday, Nov 17</button>
+                    <div class="relative ml-auto">
+                      <input class="bg-surface-container text-on-surface font-body-sm text-caption px-space-sm py-1.5 rounded outline-none cursor-pointer border border-sand-beige/40 focus:border-primary" type="date" value="2025-11-15" aria-label="Select Custom Date"/>
+                    </div>
+                  </div>
+
+                  <!-- Meal Window Switcher -->
+                  <div class="grid grid-cols-3 gap-space-xs p-1 bg-surface-container rounded-lg text-center">
+                    <button class="meal-btn py-2 rounded font-label-cta text-label-cta uppercase bg-primary text-on-primary transition-all shadow-sm" onclick="switchMeal('lunch', this)" type="button">
+                      Lunch (12 – 3:30 PM)
+                    </button>
+                    <button class="meal-btn py-2 rounded font-label-cta text-label-cta uppercase text-on-surface-variant hover:text-primary transition-all" onclick="switchMeal('tea', this)" type="button">
+                      High Tea (4:30 – 6:30)
+                    </button>
+                    <button class="meal-btn py-2 rounded font-label-cta text-label-cta uppercase text-on-surface-variant hover:text-primary transition-all" onclick="switchMeal('dinner', this)" type="button">
+                      Dinner (7 – 11 PM)
+                    </button>
+                  </div>
+
+                  <!-- Time Slot Chips -->
+                  <div class="pt-space-xs">
+                    <span class="font-caption text-caption text-on-surface-variant block mb-space-xs">Available Table Slots</span>
+                    <div class="flex flex-wrap gap-space-xs" id="slot-container">
+                      <button class="slot-chip px-3 py-1.5 rounded bg-surface-container-high text-primary font-body-sm text-body-sm hover:bg-secondary-fixed transition-colors" onclick="selectSlot(this)" type="button">12:30 PM</button>
+                      <button class="slot-chip px-3 py-1.5 rounded bg-primary text-secondary-fixed-dim font-body-sm text-body-sm shadow-sm font-medium transition-colors" onclick="selectSlot(this)" type="button">01:15 PM (Popular)</button>
+                      <button class="slot-chip px-3 py-1.5 rounded bg-surface-container-high text-primary font-body-sm text-body-sm hover:bg-secondary-fixed transition-colors" onclick="selectSlot(this)" type="button">01:45 PM</button>
+                      <button class="slot-chip px-3 py-1.5 rounded bg-surface-container-high text-primary font-body-sm text-body-sm hover:bg-secondary-fixed transition-colors" onclick="selectSlot(this)" type="button">02:15 PM</button>
+                      <button class="slot-chip px-3 py-1.5 rounded bg-surface-container-high text-primary font-body-sm text-body-sm hover:bg-secondary-fixed transition-colors" onclick="selectSlot(this)" type="button">02:45 PM</button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- STEP 3: Party Details & Occasion -->
+                <div class="flex flex-col gap-space-sm">
+                  <label class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-widest font-semibold">
+                    Step 03 • Party Size &amp; Occasion
+                  </label>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+                    <!-- Guest Count Stepper -->
+                    <div class="flex flex-col gap-1">
+                      <span class="font-caption text-caption text-on-surface-variant">Number of Guests</span>
+                      <div class="flex items-center justify-between p-2 rounded-lg bg-surface-container border border-sand-beige/30">
+                        <button class="w-10 h-10 rounded bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-secondary-fixed active:scale-95 transition-transform" onclick="changeGuestCount(-1)" type="button" aria-label="Decrease Guests">
+                          <span class="material-symbols-outlined text-[18px]">remove</span>
+                        </button>
+                        <div class="flex flex-col items-center">
+                          <span class="font-headline-sm text-headline-sm text-primary font-semibold" id="guest-count">4 Guests</span>
+                          <span class="font-caption text-[11px] text-secondary">Table with Teak Armchairs</span>
+                        </div>
+                        <button class="w-10 h-10 rounded bg-surface-container-lowest text-primary flex items-center justify-center hover:bg-secondary-fixed active:scale-95 transition-transform" onclick="changeGuestCount(1)" type="button" aria-label="Increase Guests">
+                          <span class="material-symbols-outlined text-[18px]">add</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Dining Occasion -->
+                    <div class="flex flex-col gap-1">
+                      <span class="font-caption text-caption text-on-surface-variant">Nature of Gathering</span>
+                      <select class="w-full h-14 px-space-sm rounded-lg bg-surface-container text-on-surface font-body-md outline-none focus:bg-surface-container-high border border-sand-beige/30 cursor-pointer" aria-label="Nature of Gathering">
+                        <option value="highway">Highway Pitstop / Roadtrip Transit</option>
+                        <option selected="" value="family">Family Ancestral Celebration</option>
+                        <option value="dinner">Intimate Dining Experience</option>
+                        <option value="corporate">Executive / Corporate Retreat</option>
+                        <option value="tourist">Culinary Heritage Exploration</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- STEP 4: Guest Details & Special Requests -->
+                <div class="flex flex-col gap-space-sm">
+                  <label class="font-label-eyebrow text-label-eyebrow uppercase text-primary tracking-widest font-semibold">
+                    Step 04 • Contact &amp; Special Accommodations
+                  </label>
+                  
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-space-sm">
+                    <div class="flex flex-col gap-1">
+                      <label class="font-caption text-caption text-on-surface-variant" for="guest-name">Full Name *</label>
+                      <input class="w-full h-12 px-space-sm rounded-lg bg-surface-container text-on-surface font-body-md outline-none focus:bg-surface-container-high focus:ring-1 focus:ring-primary border border-sand-beige/40" id="guest-name" name="guest_name" placeholder="e.g. Ramesh Hegde" required="" type="text"/>
+                    </div>
+                    
+                    <div class="flex flex-col gap-1">
+                      <label class="font-caption text-caption text-on-surface-variant" for="guest-phone">Phone Number (for SMS confirmation) *</label>
+                      <div class="relative">
+                        <span class="absolute left-3 top-3 font-caption text-secondary font-medium">+91</span>
+                        <input class="w-full h-12 pl-12 pr-space-sm rounded-lg bg-surface-container text-on-surface font-body-md outline-none focus:bg-surface-container-high focus:ring-1 focus:ring-primary border border-sand-beige/40" id="guest-phone" name="guest_phone" placeholder="98765 43210" required="" type="tel"/>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-col gap-1">
+                    <label class="font-caption text-caption text-on-surface-variant" for="guest-email">Email Address (Optional)</label>
+                    <input class="w-full h-12 px-space-sm rounded-lg bg-surface-container text-on-surface font-body-md outline-none focus:bg-surface-container-high focus:ring-1 focus:ring-primary border border-sand-beige/40" id="guest-email" name="guest_email" placeholder="ramesh@example.com" type="email"/>
+                  </div>
+
+                  <div class="flex flex-col gap-1">
+                    <label class="font-caption text-caption text-on-surface-variant" for="guest-notes">Special Dietary or Highway Transit Notes</label>
+                    <textarea class="w-full h-20 p-space-sm rounded-lg bg-surface-container text-on-surface font-body-md outline-none focus:bg-surface-container-high focus:ring-1 focus:ring-primary border border-sand-beige/40 resize-none" id="guest-notes" name="guest_notes" placeholder="e.g. High chair for toddler, Jain preparation, EV parking bay request, pre-ordered dish notes..."></textarea>
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="pt-space-xs flex flex-col gap-space-xs">
+                  <button class="w-full h-14 rounded-DEFAULT bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase tracking-widest font-bold shadow-md hover:bg-secondary-fixed-dim active:scale-[0.99] transition-all flex items-center justify-center gap-space-sm" type="submit">
+                    <span>Confirm Table Reservation</span>
+                    <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+                  </button>
+                  <p class="font-caption text-[11px] text-center text-on-surface-variant">
+                    Zero cancellation penalties. Complimentary valet parking upon arrival. Demo confirmation with summary provided.
+                  </p>
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- RIGHT: Highway Transit Concierge & Route Guidance (5 Columns) -->
+          <div class="lg:col-span-5 flex flex-col gap-space-lg">
+            
+            <!-- Transit Concierge Card -->
+            <div class="bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-md border border-sand-beige/40 flex flex-col gap-space-md">
+              <div class="flex items-center justify-between">
+                <div>
+                  <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary tracking-widest">Highway Oasis</span>
+                  <h3 class="font-headline-md text-headline-md text-primary">Transit Concierge &amp; Wayfinding</h3>
+                </div>
+                <span class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-primary">
+                  <span class="material-symbols-outlined text-[20px]">explore</span>
+                </span>
+              </div>
+
+              <!-- Stylized Static Map Graphic with Expressway Overlay -->
+              <div class="relative h-56 w-full rounded-lg overflow-hidden bg-cover bg-center shadow-inner border border-sand-beige/30" style="background-image: url('assets/images/nocturnal_canopy_palms.png');">
+                <div class="absolute inset-0 bg-primary/75 backdrop-blur-[1px]"></div>
+                
+                <!-- Expressway Highway Route Schematic SVG -->
+                <div class="absolute inset-0 p-4 flex flex-col justify-between text-inverse-on-surface">
+                  <div class="flex items-center justify-between text-xs font-label-cta uppercase tracking-widest text-secondary-fixed">
+                    <span>Bengaluru (54 km)</span>
+                    <span class="text-sand-beige">NH 275 Expressway</span>
+                    <span>Mysuru (75 km)</span>
+                  </div>
+                  
+                  <!-- Animated Road graphic -->
+                  <div class="relative my-auto w-full py-2">
+                    <div class="w-full h-1.5 bg-white/20 rounded-full relative">
+                      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-secondary-fixed flex items-center justify-center shadow-lg">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+                      </div>
+                    </div>
+                    <div class="text-center mt-2">
+                      <span class="inline-block px-2.5 py-0.5 rounded bg-primary-container text-secondary-fixed font-headline-sm text-xs font-semibold shadow">
+                        The Kantara • Channapatna Toll Plaza Exit
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Expressway Visual Overlay Elements -->
+                  <div class="p-space-xs bg-surface/95 backdrop-blur-md rounded flex items-center justify-between shadow-sm text-on-surface">
+                    <div class="flex items-center gap-2">
+                      <div class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></div>
+                      <div>
+                        <span class="font-label-cta text-label-cta text-primary block leading-none">Channapatna Highway Oasis</span>
+                        <span class="font-caption text-[11px] text-on-surface-variant">54 km from Bangalore Toll • 75 km from Mysore</span>
+                      </div>
+                    </div>
+                    <a class="px-2.5 py-1.5 rounded bg-primary text-inverse-on-surface font-label-cta text-[11px] uppercase tracking-wider flex items-center gap-1 hover:bg-primary-container transition-colors" href="https://maps.google.com" rel="noopener" target="_blank">
+                      <span>Directions</span>
+                      <span class="material-symbols-outlined text-[13px]">north_east</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Road Tripper Comfort Amenities -->
+              <div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+                <div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1 border border-sand-beige/20">
+                  <div class="flex items-center gap-1.5 text-primary">
+                    <span class="material-symbols-outlined text-[18px] text-secondary">local_parking</span>
+                    <span class="font-label-cta text-label-cta uppercase">Shaded Parking</span>
+                  </div>
+                  <p class="font-caption text-caption text-on-surface-variant">120+ shaded bays &amp; complimentary valet for highway cars.</p>
+                </div>
+                
+                <div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1 border border-sand-beige/20">
+                  <div class="flex items-center gap-1.5 text-primary">
+                    <span class="material-symbols-outlined text-[18px] text-veg-green">ev_charger</span>
+                    <span class="font-label-cta text-label-cta uppercase">60kW EV Fast Charge</span>
+                  </div>
+                  <p class="font-caption text-caption text-on-surface-variant">Dual CCS2 &amp; Type-2 rapid chargers operational 24/7.</p>
+                </div>
+                
+                <div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1 border border-sand-beige/20">
+                  <div class="flex items-center gap-1.5 text-primary">
+                    <span class="material-symbols-outlined text-[18px] text-secondary">shower</span>
+                    <span class="font-label-cta text-label-cta uppercase">Rest Suites</span>
+                  </div>
+                  <p class="font-caption text-caption text-on-surface-variant">Pristine sanitary rest areas &amp; infant nursing quarters.</p>
+                </div>
+                
+                <div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-1 border border-sand-beige/20">
+                  <div class="flex items-center gap-1.5 text-primary">
+                    <span class="material-symbols-outlined text-[18px] text-primary">shopping_bag</span>
+                    <span class="font-label-cta text-label-cta uppercase">Artisan Gallery</span>
+                  </div>
+                  <p class="font-caption text-caption text-on-surface-variant">Authentic GI-tagged Channapatna handcrafted lacquerware.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Host Desk & Hours Card -->
+            <div class="bg-surface-container-high/70 p-space-md md:p-space-lg rounded-xl flex flex-col gap-space-md border border-sand-beige/30">
+              <div>
+                <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary tracking-widest">Immediate Highway Inquiries</span>
+                <h3 class="font-headline-md text-headline-md text-primary">Operational Timings &amp; Desk</h3>
+              </div>
+
+              <div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+                <div class="flex items-center justify-between py-1.5 bg-surface-container/60 px-3 rounded">
+                  <span class="text-on-surface font-medium">Daily Continuous Service</span>
+                  <span class="text-secondary font-semibold">11:30 AM – 11:00 PM</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 bg-surface-container/60 px-3 rounded">
+                  <span class="text-on-surface font-medium">Highway Breakfast Veranda</span>
+                  <span class="text-secondary font-semibold">07:00 AM – 11:00 AM (Sat–Sun)</span>
+                </div>
+                <div class="flex items-center justify-between py-1.5 bg-surface-container/60 px-3 rounded">
+                  <span class="text-on-surface font-medium">Tree of Life Evening Illumination</span>
+                  <span class="text-secondary font-semibold">06:30 PM Daily</span>
+                </div>
+              </div>
+
+              <div class="pt-space-xs border-t border-sand-beige/40 flex flex-col gap-space-xs">
+                <span class="font-caption text-caption text-on-surface-variant">Direct Inquiries:</span>
+                <div class="flex items-center justify-between text-on-surface font-body-sm">
+                  <span>Concierge Host Desk</span>
+                  <a href="tel:+918028001947" class="text-primary font-semibold hover:underline">+91 (80) 2800 1947</a>
+                </div>
+                <div class="flex items-center justify-between text-on-surface font-body-sm">
+                  <span>Highway WhatsApp Helpline</span>
+                  <a href="https://wa.me/918028001947" target="_blank" rel="noopener" class="text-primary font-semibold hover:underline">+91 98450 19470</a>
+                </div>
+                <div class="flex items-center justify-between text-on-surface font-body-sm">
+                  <span>General Email</span>
+                  <a href="mailto:dine@thekantara.com" class="text-primary font-semibold hover:underline">dine@thekantara.com</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Private Banquets & Large Gatherings Card -->
+            <div class="p-space-md rounded-xl bg-primary text-inverse-on-surface flex flex-col gap-space-sm shadow-md">
+              <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed-dim tracking-wider">Celebrations &amp; Corporates</span>
+              <h4 class="font-headline-sm text-headline-sm text-secondary-fixed">Private Dining &amp; Banquets (15+ Guests)</h4>
+              <p class="font-body-sm text-body-sm text-primary-fixed-dim">
+                Curating bespoke celebratory feasts with customized multicourse menus, dedicated culinary staff, and secluded mezzanine sanctuary booths.
+              </p>
+              <a href="mailto:banquets@thekantara.com" class="mt-space-xs w-full py-2.5 rounded bg-surface-container-lowest text-primary font-label-cta text-label-cta uppercase tracking-wider text-center font-semibold hover:bg-secondary-fixed transition-colors">
+                Inquire for Banquets
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED INQUIRIES (ACCORDION) -->
+    <section class="w-full bg-surface-container py-space-xl border-t border-sand-beige/30">
+      <div class="max-w-4xl mx-auto px-margin-mobile md:px-margin-tablet">
+        <div class="text-center mb-space-lg">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase tracking-[0.22em] text-secondary font-semibold block mb-1">
+            Highway Travel Clarifications
+          </span>
+          <h2 class="font-headline-lg text-headline-lg text-primary">
+            Frequently Asked Inquiries
+          </h2>
+          <p class="font-body-md text-body-md text-on-surface-variant max-w-xl mx-auto mt-2">
+            Essential transit details for highway motorists, families, and road-trippers visiting our Channapatna sanctuary.
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-space-sm" id="faq-accordion">
+          
+          <!-- FAQ 1 -->
+          <div class="rounded-lg bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-200 border border-sand-beige/40">
+            <button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm focus:outline-none" onclick="toggleFaq(this)" type="button">
+              <span class="font-headline-sm text-headline-sm text-primary">Do highway travelers need prior table reservations?</span>
+              <span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface-container-low/50">
+              <p class="font-body-md text-body-md text-on-surface-variant pb-space-md pt-1">
+                Walk-ins are always welcomed with South Indian warmth! However, during weekend peak hours (Saturday &amp; Sunday, 1:00 PM – 3:30 PM and 8:00 PM – 9:30 PM), tables under the Grand Bamboo Canopy experience high demand. We highly recommend booking a table at least 2 hours in advance to bypass waiting lines.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="rounded-lg bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-200 border border-sand-beige/40">
+            <button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm focus:outline-none" onclick="toggleFaq(this)" type="button">
+              <span class="font-headline-sm text-headline-sm text-primary">Is there secure parking and EV charging for expressway commuters?</span>
+              <span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface-container-low/50">
+              <p class="font-body-md text-body-md text-on-surface-variant pb-space-md pt-1">
+                Yes. We provide an extensive, shaded vehicular courtyard accommodating up to 120 cars with 24-hour security guards and complimentary valet service. Our charging hub features two 60kW DC fast chargers compatible with all CCS2 electric vehicles.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="rounded-lg bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-200 border border-sand-beige/40">
+            <button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm focus:outline-none" onclick="toggleFaq(this)" type="button">
+              <span class="font-headline-sm text-headline-sm text-primary">Are pure vegetarian, Jain, and vegan options accommodated?</span>
+              <span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface-container-low/50">
+              <p class="font-body-md text-body-md text-on-surface-variant pb-space-md pt-1">
+                Strict culinary segregation is respected in our kitchens. We maintain dedicated vegetarian tawa lines and cookers. Guests observing strict Jain regimens (no root vegetables, onions, or garlic) can mention this in the booking notes; our sous chefs craft exquisite custom curries upon arrival.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="rounded-lg bg-surface-container-lowest shadow-sm overflow-hidden transition-all duration-200 border border-sand-beige/40">
+            <button class="w-full p-space-md text-left flex items-center justify-between gap-space-sm focus:outline-none" onclick="toggleFaq(this)" type="button">
+              <span class="font-headline-sm text-headline-sm text-primary">Is The Kantara pet-friendly for road-tripping families?</span>
+              <span class="faq-icon material-symbols-outlined text-secondary transition-transform duration-300">expand_more</span>
+            </button>
+            <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 px-space-md bg-surface-container-low/50">
+              <p class="font-body-md text-body-md text-on-surface-variant pb-space-md pt-1">
+                Yes, leashed four-legged companions are warmly welcomed in our open-air Veranda Garden seating. Fresh drinking water bowls and shaded grassy relaxation patches are available immediately adjacent to the courtyard.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="w-full bg-primary-container text-inverse-on-surface">
+    <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-2xl pb-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl mb-space-xl">
+        
+        <!-- Brand Narrative -->
+        <div class="lg:col-span-4 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <img alt="The Kantara Logo" class="h-8 w-auto object-contain" src="assets/images/logo.svg" onerror="this.src='assets/images/logo.svg'"/>
+            <span class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-wide">The Kantara</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">
+            Handcrafted organic architecture and heritage South Indian culinary artistry nestled along the serene Bangalore-Mysore corridor in Channapatna.
+          </p>
+          <div class="flex items-center gap-space-sm pt-space-xs">
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="https://maps.google.com" target="_blank" rel="noopener" aria-label="Google Maps Location">
+              <span class="material-symbols-outlined text-[20px]">near_me</span>
+            </a>
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="tel:+918028001947" aria-label="Phone Call">
+              <span class="material-symbols-outlined text-[20px]">call</span>
+            </a>
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="mailto:dine@thekantara.com" aria-label="Email">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Quick Links</span>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="index.html">Home</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="about.html">About Us</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="menu.html">Our Menu</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="gallery.html">Gallery Showcase</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html">Contact &amp; Location</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html#reservation">Reserve a Table</a></li>
+          </ul>
+        </div>
+
+        <!-- Operating Hours -->
+        <div class="lg:col-span-2 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Hours</span>
+          <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <p><span class="block text-inverse-on-surface font-medium">Lunch</span>12:00 PM – 3:30 PM</p>
+            <p><span class="block text-inverse-on-surface font-medium">Dinner</span>7:00 PM – 11:00 PM</p>
+            <p class="text-sand-beige text-caption font-caption pt-space-xs">Open All Days</p>
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Location</span>
+          <address class="not-italic font-body-sm text-body-sm text-on-primary-container flex flex-col gap-space-xs">
+            <p class="text-inverse-on-surface">Bangalore-Mysore Highway</p>
+            <p>Channapatna, Karnataka 562160</p>
+            <p class="text-sand-beige font-caption text-caption pt-space-xs">Complimentary Valet Parking Available</p>
+          </address>
+        </div>
+
+      </div>
+
+      <div class="pt-space-lg border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-primary-container text-caption font-caption">
+        <p>© 2025 The Kantara Restaurant. All rights reserved.</p>
+        <p class="tracking-wide">Architectural Fine Dining • Channapatna</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MOBILE BOTTOM APP BAR (< 1024px) ==================== -->
+  <nav class="mobile-bottom-nav fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)] lg:hidden border-t border-sand-beige/30" aria-label="Mobile Navigation">
+    <div class="flex justify-around items-center h-16 px-margin-mobile">
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="home" href="index.html">
+        <span class="material-symbols-outlined text-[22px]">home</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Home</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="menu" href="menu.html">
+        <span class="material-symbols-outlined text-[22px]">restaurant_menu</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Menu</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-primary font-bold transition-colors active:scale-95" data-page="contact" href="#reservation">
+        <span class="material-symbols-outlined text-[22px]">table_restaurant</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Reserve</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="gallery" href="gallery.html">
+        <span class="material-symbols-outlined text-[22px]">photo_camera</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Gallery</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-primary font-bold transition-colors active:scale-95" data-page="contact" href="contact.html">
+        <span class="material-symbols-outlined text-[22px]">explore</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Visit</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

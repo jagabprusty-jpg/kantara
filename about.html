@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <title>About Us • The Architectural Genesis & Heritage • The Kantara</title>
+  <meta name="description" content="Discover the story of The Kantara: soaring bamboo cathedral architecture, rich folklore relics, unglazed earthenware cooking, and serene hospitality in Channapatna."/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-background": "#1d1c16",
+            "on-secondary-container": "#795424",
+            "inverse-on-surface": "#f5f0e6",
+            "surface-dim": "#dedad0",
+            "veg-green": "#2E7D32",
+            "secondary-container": "#fecb90",
+            "on-error": "#ffffff",
+            "secondary-fixed-dim": "#efbe84",
+            "background": "#fef9ef",
+            "surface-container-high": "#ede8de",
+            "surface-container-highest": "#e7e2d8",
+            "secondary-fixed": "#ffddb8",
+            "outline-variant": "#c1c8c4",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#a8cfc2",
+            "error": "#ba1a1a",
+            "sand-beige": "#D8C6A5",
+            "on-surface-variant": "#414845",
+            "surface-variant": "#e7e2d8",
+            "surface-container": "#f2ede3",
+            "primary-container": "#173b32",
+            "tertiary-fixed-dim": "#e9c178",
+            "inverse-primary": "#a8cfc2",
+            "surface-bright": "#fef9ef",
+            "on-tertiary": "#ffffff",
+            "surface-tint": "#42655b",
+            "error-container": "#ffdad6",
+            "on-primary-container": "#80a599",
+            "on-primary": "#ffffff",
+            "outline": "#717975",
+            "border-timber": "#E4DAC8",
+            "charcoal-dark": "#20231F",
+            "on-tertiary-container": "#bc9853",
+            "primary": "#00251d",
+            "on-surface": "#1d1c16",
+            "secondary": "#7c5727",
+            "tertiary-container": "#473100",
+            "tertiary-fixed": "#ffdea5",
+            "inverse-surface": "#32302a",
+            "surface-container-low": "#f8f3e9",
+            "surface-container-lowest": "#ffffff",
+            "pure-white": "#FFFFFF",
+            "tertiary": "#2c1d00",
+            "on-secondary-fixed": "#2a1700",
+            "on-secondary-fixed-variant": "#614011",
+            "primary-fixed": "#c4ebde",
+            "surface": "#fef9ef",
+            "on-tertiary-fixed": "#271900",
+            "nonveg-red": "#C62828",
+            "on-tertiary-fixed-variant": "#5d4202",
+            "on-secondary": "#ffffff",
+            "on-primary-fixed": "#002019",
+            "on-primary-fixed-variant": "#2a4d44"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "space-lg": "2rem",
+            "margin-tablet": "2rem",
+            "space-sm": "0.75rem",
+            "margin": "4rem",
+            "space-xs": "0.375rem",
+            "space-xl": "3.5rem",
+            "space-2xl": "5rem",
+            "gutter": "1.5rem",
+            "gutter-mobile": "1rem",
+            "space-md": "1.25rem",
+            "margin-mobile": "1.25rem"
+          },
+          fontFamily: {
+            "headline-xl-mobile": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "label-cta": ["DM Sans"],
+            "body-sm": ["DM Sans"],
+            "headline-sm": ["Playfair Display"],
+            "body-md": ["DM Sans"],
+            "label-eyebrow": ["DM Sans"],
+            "caption": ["DM Sans"],
+            "headline-xl": ["Playfair Display"],
+            "headline-lg": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "body-lg": ["DM Sans"]
+          },
+          fontSize: {
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "600" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "label-cta": ["13px", { "lineHeight": "18px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "label-eyebrow": ["11px", { "lineHeight": "16px", "letterSpacing": "0.22em", "fontWeight": "600" }],
+            "caption": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "headline-lg": ["30px", { "lineHeight": "38px", "fontWeight": "500" }],
+            "headline-md": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="css/global.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+  <link rel="stylesheet" href="css/responsive.css"/>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-container">
+
+  <!-- ==================== SITE HEADER ==================== -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-primary-container/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.08)] transition-all duration-300">
+    <div class="h-20 max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin flex items-center justify-between gap-gutter">
+      
+      <!-- Brand Logo -->
+      <div class="flex items-center gap-space-sm">
+        <button aria-label="Open Navigation Menu" class="lg:hidden w-10 h-10 flex items-center justify-center text-inverse-on-surface rounded-full hover:bg-primary transition-all" id="menu-open-btn">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+        <a class="flex items-center gap-space-sm" href="index.html">
+          <img alt="The Kantara Logo" class="h-9 w-auto object-contain" src="assets/images/logo.svg" onerror="this.src='assets/images/logo.svg'"/>
+          <span class="font-headline-md text-headline-md text-inverse-on-surface tracking-wider font-semibold">The Kantara</span>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-space-lg">
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="home" href="index.html">Home</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-secondary-fixed active" data-page="about" href="about.html">About</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="menu" href="menu.html">Menu</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="gallery" href="gallery.html">Gallery</a>
+        <a class="nav-link font-label-cta text-label-cta uppercase transition-colors text-inverse-on-surface/80 hover:text-inverse-on-surface" data-page="contact" href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-space-md">
+        <a class="inline-flex items-center justify-center h-12 px-space-md bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase rounded-DEFAULT transition-all duration-200 hover:bg-secondary-fixed-dim hover:text-primary active:scale-[0.99] font-medium" href="contact.html#reservation">
+          Reserve a Table
+        </a>
+        <div class="hidden sm:flex w-8 h-8 rounded-full bg-primary items-center justify-center text-on-primary">
+          <span class="material-symbols-outlined text-[18px]">person</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==================== MOBILE SLIDE DRAWER ==================== -->
+  <div class="fixed inset-0 z-50 bg-charcoal-dark/60 backdrop-blur-sm transition-opacity duration-300 opacity-0 pointer-events-none" id="drawer-backdrop"></div>
+  <aside class="fixed top-0 left-0 bottom-0 z-50 w-[85vw] max-w-sm bg-primary text-inverse-on-surface flex flex-col justify-between transform -translate-x-full transition-transform duration-300 ease-out shadow-[0_16px_40px_-12px_rgba(32,35,31,0.5)]" id="slide-drawer">
+    <div class="p-margin-mobile flex flex-col h-full">
+      <div class="flex items-center justify-between pb-space-md border-b border-white/10">
+        <div class="flex items-center gap-2">
+          <img alt="The Kantara Logo" class="h-7 w-auto object-contain" src="assets/images/logo.svg"/>
+          <span class="font-headline-sm text-headline-sm text-sand-beige tracking-wide">The Kantara</span>
+        </div>
+        <button aria-label="Close Menu" class="w-10 h-10 flex items-center justify-center text-inverse-on-surface rounded-full hover:bg-primary-container active:scale-95" id="menu-close-btn">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+      <p class="font-label-eyebrow text-label-eyebrow uppercase text-primary-fixed-dim tracking-[0.22em] my-space-md">
+        Bangalore-Mysore Corridor • Channapatna
+      </p>
+      <nav class="flex flex-col gap-space-xs mt-space-xs">
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="home" href="index.html">
+          <span>Home</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-secondary-fixed font-bold transition-colors flex items-center justify-between" data-page="about" href="about.html">
+          <span>About Us</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="menu" href="menu.html">
+          <span>Our Menu</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="gallery" href="gallery.html">
+          <span>Gallery Showcase</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+        <a class="py-space-xs font-headline-md text-headline-md text-inverse-on-surface hover:text-sand-beige transition-colors flex items-center justify-between" data-page="contact" href="contact.html">
+          <span>Contact & Location</span>
+          <span class="material-symbols-outlined text-sand-beige text-[18px]">north_east</span>
+        </a>
+      </nav>
+      <div class="mt-auto pt-space-md flex flex-col gap-space-sm border-t border-white/10">
+        <a class="w-full h-12 bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase rounded-full flex items-center justify-center tracking-widest font-semibold shadow-lg hover:bg-secondary-fixed-dim transition-colors" href="contact.html#reservation">
+          Reserve a Table
+        </a>
+        <div class="pt-space-xs text-center">
+          <p class="font-caption text-caption text-primary-fixed-dim">Artisanal Dining • High Canopy Architecture</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==================== MAIN CONTENT ==================== -->
+  <main class="w-full pt-20 bg-background flex-grow">
+    <div class="flex flex-col w-full selection:bg-secondary-fixed selection:text-primary">
+
+      <!-- HERO STORYTELLING BANNER -->
+      <section class="relative w-full bg-primary-container text-inverse-on-surface overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-primary via-primary-container to-primary pointer-events-none opacity-90"></div>
+        <div class="absolute inset-0 opacity-[0.035] pointer-events-none">
+          <svg class="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern height="48" id="bamboo-grid" patternunits="userSpaceOnUse" width="48">
+                <path d="M 0 0 L 48 48 M 48 0 L 0 48" fill="none" stroke="currentColor" stroke-width="1"></path>
+                <circle cx="24" cy="24" fill="currentColor" r="2"></circle>
+              </pattern>
+            </defs>
+            <rect fill="url(#bamboo-grid)" height="100%" stroke="none" width="100%"></rect>
+          </svg>
+        </div>
+
+        <div class="relative max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-xl pb-space-2xl flex flex-col justify-between">
+          <div class="max-w-4xl pt-space-md">
+            <div class="inline-flex items-center gap-space-sm mb-space-md">
+              <span class="w-8 h-[1px] bg-secondary-fixed"></span>
+              <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed tracking-[0.25em]">The Soul of The Kantara</span>
+            </div>
+            <h1 class="font-display-hero text-display-hero text-inverse-on-surface mb-space-md leading-[1.12]">
+              Where Earthen Roots Meet <span class="italic text-secondary-fixed font-normal">Soaring Bamboo Canopies</span>
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-primary-container max-w-2xl font-light leading-relaxed">
+              A sanctuary born at the crossroads of ancient Deccan culinary heritage and progressive biophilic architecture in the silk and craft capital of Channapatna.
+            </p>
+          </div>
+
+          <!-- Quick Stats Ribbon -->
+          <div class="mt-space-2xl grid grid-cols-2 lg:grid-cols-4 gap-gutter pt-space-lg bg-primary/40 rounded-xl px-space-md md:px-space-lg backdrop-blur-sm border border-white/10">
+            <div class="flex flex-col gap-1 py-2">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px]">architecture</span>
+                <span class="font-headline-sm text-headline-sm text-secondary-fixed">100% Bamboo</span>
+              </div>
+              <span class="font-caption text-caption text-on-primary-container tracking-wider uppercase">Handcrafted Vaulted Arches</span>
+            </div>
+            <div class="flex flex-col gap-1 py-2">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px]">spa</span>
+                <span class="font-headline-sm text-headline-sm text-secondary-fixed">Zero Additives</span>
+              </div>
+              <span class="font-caption text-caption text-on-primary-container tracking-wider uppercase">Purity of Native Ingredients</span>
+            </div>
+            <div class="flex flex-col gap-1 py-2">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px]">group</span>
+                <span class="font-headline-sm text-headline-sm text-secondary-fixed">180+ Dining Seats</span>
+              </div>
+              <span class="font-caption text-caption text-on-primary-container tracking-wider uppercase">Under Soaring Cathedral Rafters</span>
+            </div>
+            <div class="flex flex-col gap-1 py-2">
+              <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-secondary-fixed text-[20px]">eco</span>
+                <span class="font-headline-sm text-headline-sm text-secondary-fixed">Cauvery Basin</span>
+              </div>
+              <span class="font-caption text-caption text-on-primary-container tracking-wider uppercase">Heirloom Grains &amp; Cold-Pressed Oils</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER I: THE ARCHITECTURAL GENESIS -->
+      <section class="relative w-full bg-surface-bright py-space-2xl">
+        <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          <div class="flex items-center justify-between mb-space-xl">
+            <div class="flex items-center gap-space-sm">
+              <span class="font-caption text-caption text-secondary font-semibold uppercase tracking-widest">Chapter 01</span>
+              <span class="w-12 h-[1px] bg-sand-beige"></span>
+              <span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">The Bamboo Cathedral</span>
+            </div>
+            <span class="font-headline-sm text-headline-sm text-sand-beige select-none font-serif">ಇತಿಹಾಸ</span>
+          </div>
+
+          <!-- Asymmetrical Split Architecture Section -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            
+            <!-- Dual Layered Images -->
+            <div class="lg:col-span-7 relative">
+              <div class="relative w-full h-[460px] md:h-[540px] rounded-xl overflow-hidden shadow-xl bg-surface-container border border-sand-beige/40">
+                <img class="w-full h-full object-cover transition-transform duration-700 hover:scale-105" alt="Wide majestic exterior view of The Kantara restaurant pavilion in Channapatna under blue sky" src="assets/images/exterior_bamboo_facade.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuDd-cBad_z7mjFb-ty8NoiNdHD5FLXNFZOsz29FiMQ2bX9M1chJjY5DuzScO_YkvGMuaMFgFcS-Xgidrpol1YM6lQNSFtsxoO4yHwVAls7ve3rK_N4JCa1ptlxiRzNhM0QyUANmIcHXnfvJgm-f4pvNxlXlVQDp9PCO3kTIvAc0RTuBeta8etZEwQROvf7MUOKTpuxZtBXogNKO3c10hshyyRtHioKAnovOpo6WzVI'"/>
+                <div class="absolute bottom-4 left-4 bg-primary/80 backdrop-blur-md px-space-md py-space-xs rounded-DEFAULT">
+                  <p class="font-caption text-caption text-inverse-on-surface uppercase tracking-wider">The Apex Facade • Highway Sanctuary</p>
+                </div>
+              </div>
+
+              <!-- Overlapping Secondary Card -->
+              <div class="relative lg:absolute -mt-16 lg:mt-0 lg:-bottom-10 lg:-right-8 w-full sm:w-[320px] md:w-[360px] bg-pure-white rounded-xl shadow-2xl p-space-sm z-20 border border-sand-beige/40">
+                <div class="relative w-full h-[220px] rounded-lg overflow-hidden bg-surface-container-high">
+                  <img class="w-full h-full object-cover" alt="Intimate evening ambiance inside the high-ceilinged bamboo sanctuary" src="assets/images/cathedral_dining_hall.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuBzu37YJrrNbinE7fPK-tFOqua_80AiHmry3U-B9ibzFWhiNLwhuh6SneYJuFLD2TAIMjCrsUVBTQzedms8npDTt4CAo2_iw2BRmyiGdrIKWLBiAuLhmJiPmaIN7r1AYH1IxgieEDFJ9ZZNCj9bFc6FV5fvPaC35Gl2OHgbEIZCX4I5_rqykfIHLgL9yrY3x3BkZg11XML3vMw45kYqATdmDww77NcBvgTIIxfwYRI'"/>
+                </div>
+                <div class="pt-space-sm px-1">
+                  <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary block mb-1">Naturally Micro-Cooled</span>
+                  <p class="font-body-sm text-body-sm text-on-surface">Curved bamboo arches engineered for continuous cross-breeze.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Narrative Column -->
+            <div class="lg:col-span-5 flex flex-col justify-center">
+              <h2 class="font-headline-xl text-headline-xl text-primary mb-space-md leading-tight">
+                Handcrafted Arches Engineered by Nature
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                Conceived as a living breathing testament to vernacular Indian architecture, The Kantara rejects cold steel and monolithic concrete. Every towering beam was harvested from sustainable groves, naturally smoke-treated, and bent by master craftsmen along the Kaveri river basin.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+                The high-pitched gable system draws ambient highway air upward, cooling the dining hall naturally even during midday sun, while warm amber lighting nested in hand-woven cane shades mimics the gentle glow of temple hearths at twilight.
+              </p>
+              
+              <!-- Quote Block -->
+              <div class="bg-surface-container-low p-space-lg rounded-xl relative shadow-sm border border-sand-beige/30">
+                <span class="material-symbols-outlined absolute top-4 right-4 text-sand-beige/40 text-[40px] select-none">format_quote</span>
+                <p class="font-headline-md text-headline-md italic text-primary leading-snug mb-space-sm">
+                  “We did not build inside a room; we planted a forest of bamboo and let the aroma of slow-cooked handi claypots rise into the rafters.”
+                </p>
+                <p class="font-caption text-caption text-secondary uppercase tracking-widest font-semibold">
+                  — The Master Craftsmen Guild
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER II: ARTISTRY, FOLKLORE & NATIVE IDENTITY -->
+      <section class="relative w-full bg-surface-container-low py-space-2xl">
+        <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          
+          <div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+            <div>
+              <div class="flex items-center gap-space-sm mb-space-xs">
+                <span class="font-caption text-caption text-secondary font-semibold uppercase tracking-widest">Chapter 02</span>
+                <span class="w-12 h-[1px] bg-sand-beige"></span>
+                <span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">Cultural Heritage</span>
+              </div>
+              <h2 class="font-headline-xl text-headline-xl text-primary">
+                Artistry, Folklore &amp; Native Identity
+              </h2>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+              Channapatna is revered worldwide as the "Gombegala Ooru" (Toy Town of Karnataka). We honor this lineage with sacred motifs sculpted into every dining alcove.
+            </p>
+          </div>
+
+          <!-- Bento Artisan Mosaic -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+            
+            <!-- Motif 1: Tree of Life -->
+            <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl border border-border-timber/60">
+              <div class="relative w-full h-[280px] overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Intricate golden Kalpavriksha tree of life brass wall sculpture" src="assets/images/tree_of_life_mural.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuDaJcUpvidc-WbU6ZINgEoXDPVBVLrJ1SohcytMBG-4R3ojLPVNbKj_YcMIJUZw2sF30vn2Ca0_GpgAnvmvQmAOxKzq7VCOb38njD0f_OC8M1ffzxmwtLDz9GVF4Vo76DeF7R6zwQwlhtPNTdCymv86ewQwJ7LG6-Y26hoSUG89m264t5n6O70NElQfmNuAIe46NOYiR2KIuGxzI0aqcBKcn_LeFy6GSPwm8i7qmTc'"/>
+                <div class="absolute top-3 left-3 bg-primary/75 backdrop-blur-md px-space-xs py-1 rounded">
+                  <span class="font-caption text-caption text-secondary-fixed uppercase tracking-wider">Sanctuary Focal Point</span>
+                </div>
+              </div>
+              <div class="p-space-md flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">The Golden Tree of Life</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Hand-forged brass sculpture illuminated from behind, representing eternal abundance and root nourishment on rustic bamboo batten walls.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center text-secondary text-caption font-semibold">
+                  <span>Kalpavriksha Heritage</span>
+                  <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motif 2: Classical Kathakali -->
+            <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl border border-border-timber/60">
+              <div class="relative w-full h-[280px] overflow-hidden bg-surface-container">
+                <img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" alt="Classical Kathakali ceremonial face sculpture artwork relief" src="assets/images/kathakali_wood_relief.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCVLpTuOMp2cuOpBCs9TGXRYs-WNZgqm2uA5gtPC39PFcmvpFT2MDh8n2iOcxyTJ8nQEBk29Y7TxoGFLkCF4Mrpev-emCJa-T2y1S19A26EW0q-nzjPBrASaQgE_Opgj-AtLnmek7aFv_t3XOj5UglzuLlW2IhV5UU9H-ESt0OnzQsSUna-Txq8CsoqbnbHmSGTy2nrnyiTqJC5I2ycIsGARHrK31MhmZLHyjL5KYI'"/>
+                <div class="absolute top-3 left-3 bg-primary/75 backdrop-blur-md px-space-xs py-1 rounded">
+                  <span class="font-caption text-caption text-secondary-fixed uppercase tracking-wider">Folklore Relic</span>
+                </div>
+              </div>
+              <div class="p-space-md flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">The Divine Greeting</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    A sculpted Kathakali relief paying homage to centuries of Dravidian performing lore, clasping hands in an auspicious gesture of welcome.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center text-secondary text-caption font-semibold">
+                  <span>Ritual Hospitality</span>
+                  <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motif 3: Kannada Wordmark -->
+            <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl border border-border-timber/60">
+              <div class="relative w-full h-[280px] overflow-hidden bg-surface-container">
+                <img alt="Glowing circular neon sign in native Kannada script reading The Kantara" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/kannada_neon_script.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuCHWvGydXQe4IBDngsTLK1abieEW8hlZQgWFKUVLAX2gq6RULeJfJKcdDFeg1y9TjjlOTGTMf60DyB9KsX4DIxy8VgPbt_57g3Swn3XlPQe5GkaM-zp4CmDF8RBWH5OgbVpUXtnXTaWJZz6GDUSKNtiGjKQwiVReo6q4HU38RlMz20X-xi4AA1AnL0zQf8WGKR68TnhYBbcEJb7NBQXKTX8leWHiEAlP3sNTGqk9_Vap1rXFyMTxUtX'"/>
+                <div class="absolute top-3 left-3 bg-primary/75 backdrop-blur-md px-space-xs py-1 rounded">
+                  <span class="font-caption text-caption text-secondary-fixed uppercase tracking-wider">Linguistic Pride</span>
+                </div>
+              </div>
+              <div class="p-space-md flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">ದಿ ಕಾಂತಾರ (The Kantara)</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Warm amber neon typography in native Kannada script embedded directly into the reed wall, celebrating Karnataka’s sacred forest identity.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center text-secondary text-caption font-semibold">
+                  <span>Rooted in Kannada Soil</span>
+                  <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Motif 4: Solid Timber Joinery -->
+            <div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col justify-between transition-all duration-300 hover:shadow-xl border border-border-timber/60">
+              <div class="relative w-full h-[280px] overflow-hidden bg-surface-container">
+                <img alt="Hand-planed solid teak dining bench and tables crafted by Channapatna artisans" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="assets/images/tree_of_life_seating.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuA-uI5t91MvTErZs86G7e1SPubk3ngDW_hFdYR3BY6IK3_m2X5y-i6zi_vUiSjs7brbMXusbDgKtll7IC0mCViswG_WDMHO_S2O_DnUIIrOknZgMcIOkQh0sYBD_5z4WqUTqA2YWp_YQKCNbvjv7bm33XX4WpFgt287H1kgTTOXRpYjtfC4WvL4DHjaI568wULWwUNptTi9GEUxj103XnpDMq-oe7VVEdFcRtITKmSbgx2oMw5BVrl6'"/>
+                <div class="absolute top-3 left-3 bg-primary/75 backdrop-blur-md px-space-xs py-1 rounded">
+                  <span class="font-caption text-caption text-secondary-fixed uppercase tracking-wider">Artisan Joinery</span>
+                </div>
+              </div>
+              <div class="p-space-md flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Solid Timber Joinery</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Custom tables carved from seasoned teak and bonded bamboo without plastic veneers, polished with natural beeswax for tactile warmth.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center text-secondary text-caption font-semibold">
+                  <span>Zero Synthetic Finishes</span>
+                  <span class="material-symbols-outlined text-[16px] ml-1">arrow_forward</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAPTER III: OUR CULINARY PHILOSOPHY -->
+      <section class="relative w-full bg-surface-bright py-space-2xl">
+        <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          
+          <div class="flex items-center gap-space-sm mb-space-sm">
+            <span class="font-caption text-caption text-secondary font-semibold uppercase tracking-widest">Chapter 03</span>
+            <span class="w-12 h-[1px] bg-sand-beige"></span>
+            <span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">The Kitchen Manifesto</span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl mb-space-xl">
+            <div class="lg:col-span-6">
+              <h2 class="font-headline-xl text-headline-xl text-primary leading-tight">
+                Earth, Smoke &amp; Heirloom Hearth
+              </h2>
+            </div>
+            <div class="lg:col-span-6 flex flex-col justify-center">
+              <p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed">
+                Our kitchen honors ancestral South Indian cooking mechanics: clay pot heat distribution, stone grinding wheels, and open woodfire. We believe food tastes honest only when heat is allowed to linger and spices are given time to yield their secrets.
+              </p>
+            </div>
+          </div>
+
+          <!-- Trio of Culinary Pillars -->
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+            
+            <!-- Pillar 1: Clay Handi & Dum -->
+            <div class="bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col justify-between border border-border-timber/60">
+              <div class="relative w-full h-[240px] overflow-hidden">
+                <img alt="Traditional earthenware handi slow simmered pot dish" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/images/handi_dum_biryani.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuAB6nMhmXSUKElY7k5u0v1O36cztu4NgJrkcYuNnEYViiGi3c3VBnoz3u6OAvs1nolbRCZU6WjqWuiDpmpg-lcG-d-RFZv94Mu78J-eIv5LYErMRtNXO6rI9wOotm_mhYfetBsyaopzRnfgj_L4xlJRJINiIUKpGWSRjZZ8tNdZ8_Ry8t-4-N_2A5aDe85qPReXuIXQnSgf6fbwTusjdWMXvk7HWQFdMAal0AmY-TNNgYxhwFGVostS'"/>
+                <div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm px-2.5 py-1 rounded text-secondary-fixed text-caption uppercase tracking-wider">
+                  Dum Pukht Simmer
+                </div>
+              </div>
+              <div class="p-space-lg flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary mb-1 block">Ancient Vessels</span>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-space-xs">Claypot Slow Cooking</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Clay is porous and alkaline, neutralizing excess acidity and infusing mutton and heirloom legumes with a distinct earthy minerality unachievable in stainless steel.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface font-caption border-t border-sand-beige/40">
+                  <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Sealed with dough</span>
+                  <span class="text-secondary font-semibold">4.5 hrs slow embers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Charcoal Live Smoke & Fire -->
+            <div class="bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col justify-between border border-border-timber/60">
+              <div class="relative w-full h-[240px] overflow-hidden">
+                <img alt="Fiery clay tandoor grill cooking skewered delicacies" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/images/charred_seekh_kebabs.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuDgxAORoTQHAdH8iSrv2zh20NPH5wzSRB3bLtTkpMSd1SfRlXhERav_QlwrKCsZMVG-kNFqV_aow5kBFlp1gqHA2rLk1fQA8ItTRIFag02HEvvgeFA0EmdDwasbqYua8Vq3G08IJBZTBnRvZ8K8bd-gYWiV5RSUKB_c5HPMgKlW7LfUYvwC_k11yKL9gG45dkp_Yn6cpQ6as-yr_KJkFJW6M9NHwbvCTCEn7I59N1vmxQb4lgulA_oj'"/>
+                <div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm px-2.5 py-1 rounded text-secondary-fixed text-caption uppercase tracking-wider">
+                  Kari (Charcoal) Fire
+                </div>
+              </div>
+              <div class="p-space-lg flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary mb-1 block">Live Charcoal</span>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-space-xs">Smoked Embers &amp; Ghee</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    Sourced coconut shell charcoal and babool wood provide high, searing dry heat that seals in moisture. Brushed with A2 village churned butter and Byadagi chili marinade.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface font-caption border-t border-sand-beige/40">
+                  <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> 450°C clay bell</span>
+                  <span class="text-secondary font-semibold">Zero gas cookers</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 3: Heirloom Grains & Flatbreads -->
+            <div class="bg-surface-container rounded-xl overflow-hidden shadow-sm flex flex-col justify-between border border-border-timber/60">
+              <div class="relative w-full h-[240px] overflow-hidden">
+                <img alt="Fresh artisanal tandoori flatbreads and parottas" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105" src="assets/images/tandoori_rotis_naan_basket.png" onerror="this.src='https://lh3.googleusercontent.com/aida-public/AB6AXuD_kvHwY385gipspi_ONYpf94SZgiTcuzyUvIsp1naPjFJ-t8-YBGeLtDbwB289KK6wb1b3Fd42TKVGVzn5wzc2-HP3mBKoLRq64k6YXtne3gnWVNzTs_hxngjVoPo5hqVWrpO54uDTBiHnuXRkjuponynvoDU1d713fKdnkm7-R678OdNmL-0UDoYrDNy5m5Ya4VSV3Q4btTWns3rGm4RXwRLZPwwyCoF97Bp5MIazVW4fbSAezyOf'"/>
+                <div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm px-2.5 py-1 rounded text-secondary-fixed text-caption uppercase tracking-wider">
+                  Fresh Harvest
+                </div>
+              </div>
+              <div class="p-space-lg flex-1 flex flex-col justify-between">
+                <div>
+                  <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary mb-1 block">Regional Grains</span>
+                  <h3 class="font-headline-md text-headline-md text-primary mb-space-xs">Heirloom Flatbreads &amp; Rice</h3>
+                  <p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                    We grind whole wheat and millets every morning. Served alongside small-batch Seeraga Samba short fragrant rice, cultivated organically on the banks of river Cauvery.
+                  </p>
+                </div>
+                <div class="mt-space-md pt-space-xs flex items-center justify-between text-on-surface font-caption border-t border-sand-beige/40">
+                  <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-secondary"></span> Ragi &amp; Emmer wheat</span>
+                  <span class="text-secondary font-semibold">Milled daily</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Ingredient Integrity Banner -->
+          <div class="mt-space-xl bg-primary text-inverse-on-surface p-space-lg md:p-space-xl rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-lg border border-white/10">
+            <div class="flex items-center gap-space-md">
+              <div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+                <span class="material-symbols-outlined text-secondary-fixed text-[30px]">verified</span>
+              </div>
+              <div>
+                <h4 class="font-headline-sm text-headline-sm text-secondary-fixed mb-1">Our Purity Commitment</h4>
+                <p class="font-body-sm text-body-sm text-on-primary-container max-w-xl">
+                  Zero artificial food colorings, no chemical tenderizers, and no reused frying oils. Every paste is hand-ground using traditional stone ammi kal and mortar pestles.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-space-sm shrink-0">
+              <span class="font-caption text-caption text-secondary-fixed-dim uppercase tracking-wider">Certified Local Organic</span>
+              <span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- CHAPTER IV: THE CHANNAPATNA SANCTUARY -->
+      <section class="relative w-full bg-surface-container py-space-2xl">
+        <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+            
+            <!-- Text Story -->
+            <div class="lg:col-span-6 flex flex-col">
+              <div class="flex items-center gap-space-sm mb-space-sm">
+                <span class="font-caption text-caption text-secondary font-semibold uppercase tracking-widest">Chapter 04</span>
+                <span class="w-12 h-[1px] bg-sand-beige"></span>
+                <span class="font-label-eyebrow text-label-eyebrow uppercase text-on-surface-variant">The Oasis on the Corridor</span>
+              </div>
+              <h2 class="font-headline-xl text-headline-xl text-primary mb-space-md leading-tight">
+                A Haven Along the Bangalore-Mysore Highway
+              </h2>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-space-md leading-relaxed">
+                The modern expressway connects Bangalore to the royal palace city of Mysore in under 90 minutes—yet speed often strips travel of its romance. The Kantara was established precisely as a sensory pause point: a moment where drivers step off the tarmac into a serene bamboo pavilion.
+              </p>
+              <p class="font-body-md text-body-md text-on-surface-variant mb-space-lg leading-relaxed">
+                Whether arriving with extended family for Sunday afternoon thalis or meeting business companions midway between technological capitals and heritage palaces, our doors welcome every traveler with cooling spiced buttermilk and warmth.
+              </p>
+
+              <!-- Interactive Highlights Checklist -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+                <div class="flex items-start gap-space-xs p-space-sm bg-surface-bright rounded-lg shadow-sm border border-sand-beige/30">
+                  <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">local_parking</span>
+                  <div>
+                    <h5 class="font-headline-sm text-[15px] font-semibold text-primary">Spacious Valet Parking</h5>
+                    <p class="font-caption text-caption text-on-surface-variant">Convenient shaded bays for over 80 vehicles with EV charging.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-space-xs p-space-sm bg-surface-bright rounded-lg shadow-sm border border-sand-beige/30">
+                  <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">family_restroom</span>
+                  <div>
+                    <h5 class="font-headline-sm text-[15px] font-semibold text-primary">Family Courtyard Dining</h5>
+                    <p class="font-caption text-caption text-on-surface-variant">Sprawling open layouts designed for tranquil multi-generational feasts.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-space-xs p-space-sm bg-surface-bright rounded-lg shadow-sm border border-sand-beige/30">
+                  <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">clean_hands</span>
+                  <div>
+                    <h5 class="font-headline-sm text-[15px] font-semibold text-primary">Spotless Rest Facilities</h5>
+                    <p class="font-caption text-caption text-on-surface-variant">Thoughtfully maintained wash amenities designed for highway voyagers.</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-space-xs p-space-sm bg-surface-bright rounded-lg shadow-sm border border-sand-beige/30">
+                  <span class="material-symbols-outlined text-secondary text-[22px] shrink-0">local_cafe</span>
+                  <div>
+                    <h5 class="font-headline-sm text-[15px] font-semibold text-primary">Fresh Filter Kaapi</h5>
+                    <p class="font-caption text-caption text-on-surface-variant">Coorg pea-berry decoctions brewed over brass dabarah-tumblers.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Location Card -->
+            <div class="lg:col-span-6 flex flex-col gap-space-md">
+              <div class="w-full h-[380px] bg-cover bg-center rounded-xl shadow-lg relative overflow-hidden bg-surface-container-high border border-border-timber/60" style="background-image: url('assets/images/bamboo_rafters_logo.png'), url('https://lh3.googleusercontent.com/aida-public/AB6AXuDXyKKacZdualcuozto9pETnt0Eze9_V_Puk3xjPH_Mrg9pJZtHr3FDuIqX02m7YH5XeXU1dp2sI71RLqeJ76wdldnlqtPAgwyETMQSfDMd9_g_uNtK-TEwHn5eYSDBBsuMv0eH5tOeSOzcQS8O20SjsYNiTM7Q6Cyz3eWpsamLiW4d_C2I3ZmV9OjxVZJ4Ms6-dIH8-xhVnDDnTb10HJUd48pnmXcSOS0d5f7ryjw');">
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+                <div class="absolute bottom-5 left-5 right-5 p-space-md bg-surface-container-lowest/95 backdrop-blur-md rounded-lg shadow-md flex items-center justify-between border border-sand-beige/40">
+                  <div>
+                    <div class="flex items-center gap-1 text-secondary">
+                      <span class="material-symbols-outlined text-[18px]">location_on</span>
+                      <span class="font-label-eyebrow text-label-eyebrow uppercase tracking-wider">Channapatna Highway Milestone</span>
+                    </div>
+                    <p class="font-body-sm text-body-sm font-semibold text-on-surface">55 km from Bangalore • 75 km from Mysore</p>
+                  </div>
+                  <a class="px-space-md py-2 bg-primary text-inverse-on-surface rounded font-label-cta text-caption uppercase hover:bg-primary-container transition-colors shrink-0" href="contact.html">
+                    Directions
+                  </a>
+                </div>
+              </div>
+
+              <!-- Testimonial Snip -->
+              <div class="bg-surface-bright p-space-md rounded-lg shadow-sm flex items-center gap-space-md border border-sand-beige/30">
+                <div class="w-12 h-12 rounded-full bg-secondary-fixed/50 flex items-center justify-center shrink-0">
+                  <span class="material-symbols-outlined text-primary text-[24px]">stars</span>
+                </div>
+                <div>
+                  <p class="font-body-sm text-body-sm italic text-on-surface">
+                    “You drive past endless generic highway dhabas, and then suddenly this soaring bamboo cathedral appears. A truly transcendent meal.”
+                  </p>
+                  <span class="font-caption text-caption text-secondary font-semibold uppercase tracking-wider block mt-1">
+                    — Bangalore Epicurean Journal
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- NARRATIVE CTA BANNER -->
+      <section class="relative w-full bg-primary text-inverse-on-surface py-space-2xl overflow-hidden border-t border-white/10">
+        <div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary/15 blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-secondary-fixed/10 blur-3xl pointer-events-none"></div>
+        
+        <div class="relative max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin text-center flex flex-col items-center">
+          <div class="inline-flex items-center gap-2 mb-space-sm">
+            <span class="w-6 h-[1px] bg-secondary-fixed"></span>
+            <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed tracking-[0.2em]">Step Beneath The Cane Canopy</span>
+            <span class="w-6 h-[1px] bg-secondary-fixed"></span>
+          </div>
+          <h2 class="font-headline-xl text-headline-xl text-inverse-on-surface mb-space-md max-w-2xl leading-tight">
+            Experience The Sanctuary in Person
+          </h2>
+          <p class="font-body-lg text-body-lg text-on-primary-container max-w-xl mb-space-xl font-light leading-relaxed">
+            Whether you are undertaking a weekend drive to Mysore or planning an intimate family feast, reserve your table under our bamboo cathedral.
+          </p>
+          
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-space-md w-full max-w-md">
+            <a class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-space-xl bg-secondary-fixed text-primary font-label-cta text-label-cta uppercase rounded-DEFAULT transition-all duration-300 hover:bg-secondary-fixed-dim shadow-md active:scale-95 font-semibold" href="contact.html#reservation">
+              Reserve Your Table
+            </a>
+            <a class="w-full sm:w-auto inline-flex items-center justify-center h-12 px-space-lg bg-transparent text-inverse-on-surface font-label-cta text-label-cta uppercase rounded-DEFAULT border-[1.5px] border-sand-beige transition-all duration-300 hover:bg-inverse-on-surface/10 active:scale-95" href="menu.html">
+              Explore Our Digital Menu
+            </a>
+          </div>
+
+          <div class="mt-space-xl pt-space-lg border-t border-outline/20 flex flex-wrap items-center justify-center gap-space-lg font-caption text-caption text-on-primary-container">
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px] text-secondary-fixed">call</span>
+              Direct Inquiries: +91 80 2991 4455
+            </span>
+            <span class="hidden sm:inline text-secondary-fixed/40">•</span>
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px] text-secondary-fixed">schedule</span>
+              Dining Hours: 12:00 PM – 11:00 PM Daily
+            </span>
+            <span class="hidden sm:inline text-secondary-fixed/40">•</span>
+            <span class="flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-[16px] text-secondary-fixed">local_activity</span>
+              Walk-ins &amp; Highway Guests Always Welcome
+            </span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ==================== SITE FOOTER ==================== -->
+  <footer class="w-full bg-primary-container text-inverse-on-surface">
+    <div class="max-w-[1380px] mx-auto px-margin-mobile md:px-margin-tablet lg:px-margin pt-space-2xl pb-space-xl">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-xl mb-space-xl">
+        <div class="lg:col-span-4 flex flex-col gap-space-md">
+          <div class="flex items-center gap-space-sm">
+            <img alt="The Kantara Logo" class="h-8 w-auto object-contain" src="assets/images/logo.svg"/>
+            <span class="font-headline-lg text-headline-lg text-inverse-on-surface tracking-wide">The Kantara</span>
+          </div>
+          <p class="font-body-md text-body-md text-on-primary-container max-w-sm">
+            Handcrafted organic architecture and heritage South Indian culinary artistry nestled along the serene Bangalore-Mysore corridor.
+          </p>
+          <div class="flex items-center gap-space-sm pt-space-xs">
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="https://maps.google.com" target="_blank" rel="noopener" aria-label="Google Maps Location">
+              <span class="material-symbols-outlined text-[20px]">near_me</span>
+            </a>
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="gallery.html" aria-label="Visual Gallery Showcase">
+              <span class="material-symbols-outlined text-[20px]">camera</span>
+            </a>
+            <a class="w-10 h-10 rounded-DEFAULT bg-primary flex items-center justify-center text-inverse-on-surface hover:text-secondary-fixed transition-colors" href="mailto:dine@thekantara.com" aria-label="Email">
+              <span class="material-symbols-outlined text-[20px]">mail</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Quick Links</span>
+          <ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="index.html">Home</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="about.html">About Us</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="menu.html">Our Menu</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="gallery.html">Gallery Showcase</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html">Contact &amp; Location</a></li>
+            <li><a class="hover:text-inverse-on-surface transition-colors" href="contact.html#reservation">Reserve a Table</a></li>
+          </ul>
+        </div>
+
+        <div class="lg:col-span-2 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Hours</span>
+          <div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-primary-container">
+            <p><span class="block text-inverse-on-surface font-medium">Lunch</span>12:00 PM – 3:30 PM</p>
+            <p><span class="block text-inverse-on-surface font-medium">Dinner</span>7:00 PM – 11:00 PM</p>
+            <p class="text-sand-beige text-caption font-caption pt-space-xs">Open All Days</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 flex flex-col gap-space-sm">
+          <span class="font-label-eyebrow text-label-eyebrow uppercase text-secondary-fixed">Location</span>
+          <address class="not-italic font-body-sm text-body-sm text-on-primary-container flex flex-col gap-space-xs">
+            <p class="text-inverse-on-surface">Bangalore-Mysore Highway</p>
+            <p>Channapatna, Karnataka 562160</p>
+            <p class="text-sand-beige font-caption text-caption pt-space-xs">Complimentary Valet Parking Available</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="pt-space-lg border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-primary-container text-caption font-caption">
+        <p>© 2025 The Kantara Restaurant. All rights reserved.</p>
+        <p class="tracking-wide">Architectural Fine Dining • Channapatna</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MOBILE BOTTOM APP BAR (< 1024px) ==================== -->
+  <nav class="mobile-bottom-nav fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.06)] lg:hidden border-t border-sand-beige/30" aria-label="Mobile Navigation">
+    <div class="flex justify-around items-center h-16 px-margin-mobile">
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="home" href="index.html">
+        <span class="material-symbols-outlined text-[22px]">home</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Home</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="menu" href="menu.html">
+        <span class="material-symbols-outlined text-[22px]">restaurant_menu</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Menu</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="contact" href="contact.html#reservation">
+        <span class="material-symbols-outlined text-[22px]">table_restaurant</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Reserve</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="gallery" href="gallery.html">
+        <span class="material-symbols-outlined text-[22px]">photo_camera</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Gallery</span>
+      </a>
+      <a class="bottom-nav-item flex flex-col items-center justify-center gap-0.5 min-w-[54px] h-12 text-on-surface-variant transition-colors active:scale-95" data-page="contact" href="contact.html">
+        <span class="material-symbols-outlined text-[22px]">explore</span>
+        <span class="font-label-eyebrow text-[10px] uppercase">Visit</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Scripts -->
+  <script src="js/navigation.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
